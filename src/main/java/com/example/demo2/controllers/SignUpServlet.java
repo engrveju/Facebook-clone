@@ -34,7 +34,7 @@ public class SignUpServlet extends HttpServlet {
         userDao.saveUser(userDto);
 
 
-        request.getRequestDispatcher("/home.jsp")
+        request.getRequestDispatcher("home.jsp")
                 .forward(request, response);
 
 

@@ -64,13 +64,6 @@
 
 <%--        <label  id="gen"><b>Gender: </b></label>--%>
 
-<%--        <input type="radio" id="male" name="gender" value="male">--%>
-<%--        <label for="male">Male</label>--%>
-<%--        <input type="radio" id="female" name="gender" value="female">--%>
-<%--        <label for="female">Female</label>--%>
-
-
-
         <div class="text">By clicking Sign Up, you agree to our Terms, Data Policy and Cookie Policy. You may
             receive SMS notifications from us and can opt out at any time.</div>
 

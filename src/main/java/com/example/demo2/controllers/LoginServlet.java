@@ -25,6 +25,7 @@ public class LoginServlet extends HttpServlet {
         System.out.println(password);
 
         // validate if the user exists in Database
+        System.out.println("got to password verification");
 
        User foundUser = userDao.findUserByEmailAndPassword(email, password);
 
@@ -38,9 +39,7 @@ public class LoginServlet extends HttpServlet {
            requestSession.setAttribute("loggedUser", foundUser);
        }
 
-        // redirect to dashboard.jsp
-
-        request.getRequestDispatcher("/dashboard.jsp")
+        request.getRequestDispatcher("href=${pageContext.request.contextPath}/dashboard.jsp")
                 .forward(request, response);
 
     }

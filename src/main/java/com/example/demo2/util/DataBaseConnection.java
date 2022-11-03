@@ -6,17 +6,15 @@ import com.zaxxer.hikari.HikariDataSource;
 import javax.sql.DataSource;
 import java.sql.Connection;
 
-public enum DataBaseConnection {
-
-    INSTANCE;
+public class DataBaseConnection {
 
     public DataSource getDatasource(){
 
         MysqlDataSource dataSource = new MysqlDataSource();
 
-        dataSource.setUrl("jdbc:mysql://localhost/facebook?serverTimezone=UTC");
+        dataSource.setUrl("jdbc:mysql://localhost/jideofo?serverTimezone=UTC");
         dataSource.setUser("root");
-        dataSource.setPassword("root");
+        dataSource.setPassword("emmanuel");
 
 
         return dataSource;

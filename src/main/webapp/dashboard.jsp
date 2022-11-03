@@ -123,7 +123,7 @@
     .rightgrid, .leftgrid {
       display: grid;
       grid-gap: 10px;
-      grid-template-rows: repeat(1fr, auto);
+      grid-template-rows: repeat(auto-fill);
       background-color: rgb(255, 255, 255);
       padding: 5px;
     }
